@@ -1,0 +1,152 @@
+.app-container {
+  max-width: 500px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #f8f9fa;
+  border-radius: 10px;
+  box-shadow: 0px 0px 20px rgba(110, 93, 93, 0.1);
+}
+
+.app-title {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #333;
+  font-family: 'Arial', sans-serif;
+  font-size: 24px;
+}
+
+.tracker-container {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.tracker-step {
+  flex: 1;
+  text-align: center;
+  padding: 10px;
+  font-size: 14px;
+  color: #999;
+  border-bottom: 2px solid #ccc;
+  position: relative;
+}
+
+.tracker-step.complete {
+  color: #28a745;
+  font-weight: bold;
+  border-bottom-color: #28a745;
+}
+
+.tracker-arrow {
+  width: 20px;
+  height: 20px;
+  background-color: #ccc;
+  clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+  align-self: center;
+  transition: background-color 0.3s;
+}
+
+.tracker-arrow.complete {
+  background-color: #28a745;
+}
+
+.checkmark {
+  font-size: 16px;
+  color: #28a745;
+  margin-left: 5px;
+}
+
+.form-group {
+  margin-bottom: 15px;
+}
+
+.input-field {
+  width: 100%;
+  padding: 10px;
+  border: 2px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+  transition: border-color 0.3s;
+}
+
+.input-field:focus {
+  border-color: #007bff;
+}
+
+.error-message {
+  color: #dc3545;
+  font-size: 12px;
+  margin-top: 5px;
+}
+
+/* .button-group {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+} */
+
+.action-button {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  background-color: #007bff;
+  color: #fff;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.action-button:hover {
+  background-color: #0056b3;
+}
+
+.barcode-container {
+  margin-top: 30px;
+  text-align: center;
+}
+
+.barcode-image {
+  max-width: 100%;
+  height: auto;
+  margin-bottom: 10px;
+}
+
+.download-link {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #28a745;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+}
+
+.download-link:hover {
+  background-color: #218838;
+}
+
+.layout-container {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 60px; /* Space between the tracker and main content */
+}
+
+/* .tracker-container {
+  flex: 1;
+  max-width: 200px;
+} */
+
+.main-content {
+  flex: 3;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.button-group {
+  margin-top: 20px;
+  display: flex;
+  gap: 10px;
+}

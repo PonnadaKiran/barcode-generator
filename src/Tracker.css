@@ -1,0 +1,47 @@
+.tracker-container-vertical {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 30px; /* Adjusted width to fit smaller circles */
+}
+
+.tracker-step {
+    width: 20px; /* Reduced width of the circle */
+    height: 20px; /* Reduced height of the circle */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    border: 2px solid #ddd;
+    
+    transition: background-color 0.3s ease, border-color 0.3s ease;
+}
+
+.tracker-step.complete {
+    background-color: #4f46e5; /* Purple color for completed steps */
+    border-color: #4f46e5;
+}
+
+.tracker-step .checkmark {
+    color: white;
+    font-size: 15px; /* Adjusted font size for smaller circles */
+}
+
+.tracker-line {
+    width: 4px; /* Reduced thickness of the vertical line */
+    height: 30px; /* Reduced length of the vertical line */
+    background-color: #ddd;
+    
+    transition: background-color 0.3s ease;
+}
+
+.tracker-line.complete {
+    background-color: #4f46e5; /* Purple color for completed line */
+}
+
+.circle {
+    width: 10px; /* Reduced size of the inner circle */
+    height: 10px;
+    border-radius: 50%;
+    border: 2px solid #ddd;
+}
